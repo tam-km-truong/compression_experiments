@@ -1,0 +1,1 @@
+tail -n +2 file_list.all.latest.tsv | cut -f6 | uniq | xargs -I {} -n 1 curl --output-dir ./tar_xz/ -LJO "{}"
