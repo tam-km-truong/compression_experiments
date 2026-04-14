@@ -3,3 +3,4 @@
 *.fa.gz
 *.fa
 01_source_files/file_list.all.latest.tsv
+*.csv
