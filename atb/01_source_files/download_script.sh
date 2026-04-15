@@ -15,4 +15,5 @@ if [ ! -f "$FILE_LIST" ]; then
     fi
 fi
 
-tail -n +2 "$FILE_LIST" | cut -f6 | sort -u | xargs -I {} -P 4 sh -c 'echo "Downloading: $(basename "$1")"; curl --fail --show-error --silent --output-dir "$TAR_DIR" -LJO "$1"' _ {}
+echo "Downloading"
+tail -n +2 "$FILE_LIST" | cut -f6 | sort -u | xargs -I {} -P 4 curl --fail --show-error --silent --output-dir "$TAR_DIR" -LJO "{}"
