@@ -15,5 +15,6 @@ dependencies:
   - agc=3.2.0
   - mbgc=2.0.1
   - seqkit=2.10.1
+  - attotree
   - pip:
       - git+https://github.com/tam-km-truong/PhyloPack.git
